@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light px-3 border-bottom sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold text-secondary m-2" routerLink="/">Tommy</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <li class="nav-item ms-3">
+      <button class="btn btn-outline-secondary btn-lg" (click)="toggleTheme()">
+        <i [class]="theme === 'dark' ? 'bi bi-moon-stars' : 'bi bi-brightness-high'"></i>
+      </button>
+    </li>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/about" routerLinkActive="active" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/projects" routerLinkActive="active" class="nav-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/contact" routerLinkActive="active" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

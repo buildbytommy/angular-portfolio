@@ -1,0 +1,19 @@
+body {
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light {
+  background-color: #f1f1f1;
+  color: #263238;
+}
+
+body.dark {
+  background-color: black;
+  color: #f1f1f1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

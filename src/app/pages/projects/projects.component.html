@@ -1,0 +1,15 @@
+<div class="container py-5">
+  <h2 class="fw-bold mb-4 text-center">Projects</h2>
+  <div class="row g-4">
+    <div class="col-md-6 col-lg-4" *ngFor="let project of projects">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title fw-bold text-center">{{ project.title }}</h5>
+          <p class="card-text"><b>Tech Stack : </b>{{ project.tech }}</p>
+          <p class="card-text"><b>Description : </b>{{ project.description }}</p>
+          <p class="card-text"><b>Purpose : </b>{{ project.purpose }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
